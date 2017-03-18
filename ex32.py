@@ -19,10 +19,11 @@ for i in change:
 elements = []
 
 # Then use the range function to do 0 to 5 counts
-for i in range(0, 6):
-    print "Adding %d to the list." % i
+#for i in range(6):
+    #print "Adding %d to the list." % i
     # append is a function that lists understand
-    elements.append(i)
+    #elements.append(range(6))
+elements.append(range(6))
 
 # Now we can print them out too
 for i in elements:
