@@ -10,6 +10,11 @@ def loop(rounds):
         print "Numbers now: ", numbers
         print "At the bottom i is %i" % i
 
+def loop_for(rounds):
+    for x in range(0, rounds):
+        numbers.append(x)
+        print "Number is : %i" % x
+
 #while i < 6:
     #print "At the top i is %d" % i
     #numbers.append(i)
@@ -18,8 +23,14 @@ def loop(rounds):
     #print "Numbers now: ", numbers
     #print "At the bottom i is %d" % i
 
+loop_type = int(raw_input("1 While Loop\n2 For Loop\nAuswahl: "))
 count = int(raw_input("How often: "))
-loop(count)
+if loop_type == 1:
+    loop(count)
+elif loop_type == 2:
+    loop_for(count)
+else:
+    print "Wrong entry"
 
 
 #print "Literally variable numbers: %d" % numbers
